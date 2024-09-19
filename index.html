@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/95ec607196.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Portafolio - Camilo Jiménez</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Camilo Jiménez</h1>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#servicios" data-scroll>Mi Información</a>
+                        <a href="#habilidades" data-scroll>Habilidades</a>
+                        <a href="#trabajos" data-scroll>Trabajos</a>
+                        <a href="#contacto" data-scroll>Contacto</a>
+                    </nav>
+                    
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+                        <a href="https://www.facebook.com/pcamilo.jimenez/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Desarrollador de Software</h2>
+                        <p id="descripcion"></p>
+                        <!-- <button class="btn btn-1">Descargar CV</button> -->
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/foto-inicio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fondoimg"></div>
+        <section>
+            <img src="./img/yoo.png" alt="">
+            <div class="minformacion">
+                <h4>Nombre: &nbsp<p>Camilo Alexander Anacona Jiménez</p></h4>
+                <h4>Lugar de Nacimiento: &nbsp<p>Pitalito, Huila, Colombia</p></h4>
+                <h4>Fecha de Nacimiento: &nbsp<p>14/08/2005</p></h4>
+                <h4>Correo: &nbsp<p>camiloanaconaji@gmail.com</p></h4>
+                <h4>Teléfono: &nbsp<p>+57 311 886 8685</p></h4>
+            </div>
+        </section>
+    </section>
+
+    <!-- sección habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="97">
+                                97%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="40">
+                                40%
+                            </div>
+                            <h2>JAVA</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="60">
+                                60%
+                            </div>
+                            <h2>MYSQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="80">
+                                80%
+                            </div>
+                            <h2>PHP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="30">
+                                30%
+                            </div>
+                            <h2>C++</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="habilidades-mobile" id="habilidades">
+        <section class="habilidades-submobile">
+            <h2>Habilidades</h2>
+        <div class="filas">
+            <div>
+                <ol>
+                    <p>HTML & CSS</p>
+                    <P>JAVA</P>
+                    <p>JAVASCRIPT</p>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <p>MYSQL</p>
+                    <P>PHP</P>
+                    <p>C++</p>
+                </ol>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <!-- sección trabajos -->
+    <section class="trabajos" id="trabajos">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(0)" class="" id="diseño" onclick="verCategoria('diseño')">Mockups</a>
+            <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Desarrollo Web</a>
+            <a href="javascript:void(0)" class="" id="migracion" onclick="verCategoria('migracion')">Migración</a>
+        </nav>
+
+        <div class="galeria">
+            <div class="item diseño">
+                <img src="img/you.png" alt="">
+                <div class="info">
+                    <h3>You</h3>
+                    <span>html</span><span>css</span>
+                    <a href="./contenido_portafolio/you.com/index.html" target="_blank">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/DentalLife.png" alt="">
+                <div class="info">
+                    <h3>DentalLife</h3>
+                    <span>html</span><span>css</span><span>javascript</span><span>php</span>
+                    <a href="./contenido_portafolio/DentalLife/index.php" target="_blank">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item migracion">
+                <img src="contenido_portafolio/ejercicios c++ a php/img.jpeg" alt="">
+                <div class="info">
+                    <h3>C++ to PHP</h3>
+                    <span>C++</span><span>PHP</span>
+                    <a href="contenido_portafolio/ejercicios c++ a php/index.php">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item diseño">
+                <img src="img/bancoop.jpg" alt="">
+                <div class="info">
+                    <h3>Bancoop</h3>
+                    <span>html</span><span>css</span>
+                    <a href="contenido_portafolio/Camilo Jiménez 2.0/Camilo Jiménez 2.0/index.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item migracion">
+                <img src="img/trabajo5.png" alt="">
+                <div class="info">
+                    <h3>Hola</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/senalingua.png" alt="">
+                <div class="info">
+                    <h3>SENALINGUA</h3>
+                    <h5>Software para el SENA</h5>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                    <a href="https://adso24.com/senalinguacaqueta/">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item diseño">
+                <img src="img/privio.jpeg" alt="">
+                <div class="info">
+                    <h3>PM</h3>
+                    <span>html</span><span>css</span>
+                    <a href="contenido_portafolio/pm/index.html">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/farmadso.png" alt="">
+                <div class="info">
+                    <h3>FARMADSO</h3>
+                    <h5>Software para el SENA</h5>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                    <a href="https://adso24.com/farmadso/">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/asignacion.png" alt="">
+                <div class="info">
+                    <h3>Asignación de Ambientes</h3>
+                    <h5>Software para el SENA</h5>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                    <a href="https://adso24.com/asignar/">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/votaciones.png" alt="">
+                <div class="info">
+                    <h3>Sistema de Votaciones</h3>
+                    <h5>Software para el SENA</h5>
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                    <a href="https://adso24.com/sena/vota/">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>camiloanaconaji@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+57 311 886 8685</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Colombia</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Pitalito</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wsp">
+        <a href="https://wa.me/573118868685"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <footer>
+        <p>Portafolio de Camilo Jiménez - Copyrigth 2023</p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="./js/descripcion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@17.2.1/dist/smooth-scroll.polyfills.min.js"></script>
+
+</body>
+</html>
